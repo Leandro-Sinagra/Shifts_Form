@@ -1,0 +1,128 @@
+
+    input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    }
+
+    input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+    background-color: #45a049;
+    }
+
+    body {
+        background-color:#124d6e;
+        font-family: "Poppins", helvetica;
+        background-size: 10px 10px;
+        background-repeat: y;
+        
+        background-color: white;
+
+    }
+
+    div {
+    border-radius: 5px;
+    background-color: #F9E4B7;
+    padding: 3px 20px;
+    outline: black;
+    }
+
+    header {
+        margin: 0;
+        background-color: #f2f2f2;
+        width: 100%;
+        border: none;
+        padding: 0;
+    }
+
+    img.Vemo_img {
+        float: right;
+        padding: 0px;
+    }
+
+    /* Box de selección de puntualidad - INICIO */   
+    .range {
+        height: 80px;  
+        width: 200px;
+        background: #F9E4B7;
+        background-color: #F9E4B7;
+        border-radius: 10px;
+        padding: 10px 20px; 
+    }
+    /* Box de selección de puntualidad - Campo */
+    .range .field{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .range .field .value{
+        position: absolute;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .range .field .value.left{
+        left: -30px;
+    }
+    .range .field .value.right{
+        right: -30px;
+    }
+    
+    .range .sliderValue{
+        position: relative;
+        width: 100%;
+    }
+
+    .range .sliderValue span{
+        position: absolute;
+        height: 45px;
+        width: 45px;
+        background: #F9E4B7;
+        color: #FFF;
+        font-weight: 500;
+        top: -8px;
+        transform: translateX(-50%);
+        line-height: 1px;
+        z-index: 2;
+    }
+
+    .range .sliderValue span:after{
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        background: #F9E4B7;
+        left: 100%;
+        top: -0px;
+        transform: translateX(-50%) rotate(45deg);
+        border: 2px solid #FFF;
+        z-index: -1;
+    }
+
+    .range .field input{
+        -webkit-appearance: none ;
+        height: 3px;
+        width: 100%;
+        background: #ddd;
+        border-radius: 3px;
+        outline: none;
+        border: none;
+    }
+
+    /* Box de selección de puntualidad - FIN */
